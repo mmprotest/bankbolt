@@ -1,0 +1,4 @@
+{"lenders": {
+  "lender_foo": {"module": "bank_normalizer.export.lender_profiles.lender_foo", "name": "Foo Bank Mortgage"},
+  "lender_bar": {"module": "bank_normalizer.export.lender_profiles.lender_bar", "name": "Bar Lend Loans"}
+}}
