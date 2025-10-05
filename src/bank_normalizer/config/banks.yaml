@@ -1,0 +1,6 @@
+{"banks": [
+  {"module": "bank_normalizer.normalize.banks.anz", "name": "ANZ", "patterns": ["AUSTRALIA AND NEW ZEALAND BANKING GROUP", "ANZ"]},
+  {"module": "bank_normalizer.normalize.banks.cba", "name": "CBA", "patterns": ["COMMONWEALTH BANK", "CBA"]},
+  {"module": "bank_normalizer.normalize.banks.nab", "name": "NAB", "patterns": ["NATIONAL AUSTRALIA BANK", "NAB"]},
+  {"module": "bank_normalizer.normalize.banks.wbc", "name": "Westpac", "patterns": ["WESTPAC", "WBC"]}
+]}

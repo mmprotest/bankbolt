@@ -1,0 +1,8 @@
+{% for bundle in bundles %}
+<div class="bundle">
+  <h3>{{ bundle.meta.bank }}</h3>
+  <p>Period: {{ bundle.meta.period_start }} → {{ bundle.meta.period_end }}</p>
+  <a href="{{ bundle.csv }}">Download CSV</a>
+  <a href="{{ bundle.xlsx }}">Download XLSX</a>
+</div>
+{% endfor %}

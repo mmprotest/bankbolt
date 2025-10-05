@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <form id="upload-form" hx-post="/extract" hx-encoding="multipart/form-data" hx-target="#results" hx-swap="innerHTML">
+    <label for="files">Select PDF statements</label>
+    <input type="file" id="files" name="files" accept="application/pdf" multiple />
+    <button type="submit">Extract</button>
+  </form>
+</section>
+<section>
+  <h2>Recent jobs</h2>
+  <ul>
+    {% for job in recent %}
+    <li>{{ job.job_id }} - {{ job.files|join(', ') }}</li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="results"></section>
+<script src="/static/htmx-lite.js"></script>
+{% endblock %}
